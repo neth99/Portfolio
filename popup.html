@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Thank You - Home for Meow</title>
+        <link rel="stylesheet" type="text/css" href="popup.css">
+    </head>
+    <body>
+    <div class ="popup" id="popup">
+    <img src = "tick.png">
+    <h2>Thank You</h2>
+    <p>Your Details has been successfully submitted.
+         Thank You</p>
+    <button type = "button"  onclick="closepopup()">OK</button>
+    <script>
+        function closepopup(){
+            let close = document.getElementById('popup');
+            close.style.display ='none';
+            window.open('','_parent','');
+            setTimeout(function(){window.close();},4000)
+        }
+    </script>
+</div>
+</body>
+</html>

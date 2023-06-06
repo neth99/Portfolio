@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Foster Care a Cat - Home for Meow</title>
+        <link rel="stylesheet" type="text/css" href="Foster_care_form.css">
+        <script src="https://kit.fontawesome.com/407e7658e9.js" crossorigin="anonymous"></script>
+<script>
+    
+
+    
+    function validateForm() {
+      
+      const name = nameInput.value.trim();
+      const phone = phoneInput.value.trim();
+      const email = emailInput.value.trim();
+
+     
+      function validateName(name) {
+  const regex = /^[a-zA-Z ]+$/;
+  return regex.test(name);
+}
+
+
+function validatePhone(pNo) {
+  const regex = /^[0-9]{10}$/;
+  return regex.test(pNo);
+}
+
+
+function validateEmail(email) {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
+}
+
+      
+      return true;
+    }
+	</script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="navbar">
+                <img src="logo.png" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="HomePage.html">Home</a><li>
+                        <li><a href="About_us.html">About Us</a><li>
+                        <li><a href="contactusnew.html">Contact</a><li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="description">
+            <h2><span>Foster</span> Care</h2>
+        </div>
+        <div class="hero">
+<form name="myForm" action="/action_page.php" onsumbit="return validateForm()" method="post">
+    <div class="row">
+        <div class="input-group">
+		
+            <input type="text" id="name" required>
+            <label for="name"><i class="fa-solid fa-user" id="name"></i> Your Name</label>
+        
+		</div>
+        <div class="input-group">
+		
+            <input type="text" id="number" required>
+            <label for="number"><i class="fa-solid fa-square-phone"id="pNo"></i> Phone Number</label>
+        
+		</div>
+    </div>
+   
+    <div class="input-group">
+	
+        <input type="text" id="email" required>
+        <label for="email"><i class="fa-solid fa-envelope" id="email"></i> Email Id</label>
+   
+	</div>
+
+
+    <h4><i class="fa-solid fa-shield-cat"></i> Select your preference</h4>
+
+    <div class="radio-container">
+      <input type="radio" id="boy" name="os" />
+      <label for="boy">Boy</label>
+
+      <input type="radio" id="girl" name="os" />
+      <label for="girl">Girl</label>
+
+      <input type="radio" id="any" name="os" />
+      <label for="any">Any</label>
+    </div>
+  
+    <div class="input-group">
+        <textarea id="message" rows="5" required></textarea>
+        <label for="message"><i class="fa-solid fa-paw"></i> Why do you want to adopt a cat?</label>
+    </div>
+
+    <div class="input-group">
+        <textarea id="experiences" rows="5" required></textarea>
+        <label for="experiences"><i class="fa-solid fa-paw"></i> Experiences you have with cats?</label>
+    </div>
+    
+    
+    <button type="submit">Done <i class="fa-solid fa-paper-plane"></i></button>
+
+</form>
+        </div>
+
+        <footer>
+            <div class="footer-bottom">
+                <p>copyright &copy;2022 homeformeow. designed by <span>group3</span></p>
+            </div>
+        </footer>
+    </body>
+</html>

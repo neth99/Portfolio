@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <title>Adopt a Cat - Home for Meow</title>
+        <link rel="stylesheet" type="text/css" href="Adopt_a_cat_form.css">
+        <script src = "adopt a cat.js"></script>
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="navbar">
+                <img src="logo.png" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="HomePage.html">Home</a><li>
+                        <li><a href="About_us.html">About Us</a><li>
+                        <li><a href="contactusnew.html">Contact</a><li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="description">
+            <h2><span>Adopt</span> Don't Buy</h2>
+        </div>
+        <div class="hero">
+<form class = "form error" method="POST" action="connect4.php">
+    <div class="row">
+        <div class="input-group" >
+            <input type="text" id="namecheck" name="namein" onkeyup="checkName()">
+            <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+            <span id = "name-error"> </span>
+        </div>
+        <div class="input-group">
+            <input type="text" id="numbercheck" name="numin" onkeyup="checkNumber()" >
+            <label for="number"><i class="fa-solid fa-square-phone"></i> Phone Number</label>
+            <span id = "number-error"></span>
+        </div>
+    </div>
+   
+    <div class="input-group">
+        <input type="text" id="emailcheck" name="ein" onkeyup="checkemail()" >
+        <label for="email"><i class="fa-solid fa-envelope"></i> Email Id</label>
+        <span id = "email-error"></span>
+    </div>
+
+    <div class="input-group">
+        <input type="text" id="agecheck" name="agein" onkeyup ="checkage()" >
+        <label for="age"><i class="fa-solid fa-cat"></i> Age of the cat you want</label>
+        <span id = "age-error"> </span>
+    </div>
+
+    <h4><i class="fa-solid fa-shield-cat"></i> Select your preference   <span class = "gender-error"></span>
+    </h4> 
+    <div class="radio-container" id="radiocheck" >
+      <input type="radio" id="boy" name="gender" value="m" />
+      <label for="boy">Boy</label>
+
+      <input type="radio" id="girl" name="gender" value="f"/>
+      <label for="girl">Girl</label>
+
+      <input type="radio" id="any" name="gender" Value="o"/>
+      <label for="any">Any</label>
+      
+      
+    </div>
+  
+    <div class="input-group">
+        <textarea id="msgcheck" rows="8" name = "msg" onkeyup="checkmsg()" ></textarea>
+        <span id = "message-error"> </span>
+        <label for="message"><i class="fa-solid fa-paw"></i> Why do you want to adopt a cat?</label>
+    </div>
+    
+    <button id="submit" onclick="return validateform()" >ADOPT <i class="fa-solid fa-paper-plane"></i></button>
+    <span id = "submit-error"> </span>
+</form>
+        </div>
+
+        <footer>
+            <div class="footer-bottom">
+                <p>copyright &copy;2022 homeformeow. designed by <span>group3</span></p>
+            </div>
+        </footer>
+    </body>
+</html>

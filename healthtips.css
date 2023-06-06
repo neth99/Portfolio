@@ -1,0 +1,308 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: justify;
+}
+
+body
+{
+	background: rgba(0,0,0,0.74) url(erik-jan-leusink-gr1UYHBFkD4-unsplash.jpg);
+	height:100%;
+	background-size: cover;
+	background-blend-mode: darken;
+	background-position: center;
+	height: 100vh;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+   
+
+.card {
+ width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card img {
+  width: 100%; /* set the width to 100% to fill the container */
+  height: 70%; /* adjust the height to your desired size */
+  object-fit: cover; /* crop the image to fit the container */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.button {
+  
+  border: 5px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+ 
+}
+
+/* CSS for the like button */
+.like {
+  color: black;
+  border: none;
+}
+
+.like:hover {
+ color: orange;
+}
+
+.like.clicked {
+  background-color: orange;
+  color: white;
+}
+
+/* CSS for the dislike button */
+.dislike {
+  color: black;
+  border: none;
+  
+}
+
+.dislike:hover {
+  color: orange;
+}
+
+.dislike.clicked {
+  background-color: orange;
+  color: white;
+}
+
+/* CSS for the share button */
+.share {
+  color: black;
+  border: none;
+}
+
+.share:hover {
+ color: orange;
+}
+
+.share.clicked {
+  background-color: orange;
+  color: white;
+}
+
+button:active {
+  background-color: orange;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+}
+
+.card .imgBx {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .imgBx img {
+  height: 100%;
+  width: auto;
+}
+
+.card .content {
+  text-align: center;
+  padding: 20px;
+}
+
+.card .content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card .content p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.card .actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card .actions button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+  padding: 5px 10px;
+}
+
+.card .actions button i {
+  margin-right: 5px;
+}
+
+
+
+
+
+
+.main
+{
+    width: 100%;
+    height: 20vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 3%;
+    box-sizing: border-box;
+}
+
+.navbar
+{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.logo
+{
+    width: 150px;
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+
+ul
+{
+	float:right;
+	list-style-type:none;
+	margin-top:35px;
+	padding:40;
+}
+
+ul li
+{
+	display:inline-block;
+}
+
+ul li a
+{
+	text-decoration:none;
+	color:white;
+	padding:10px 20px;
+	border:2px solid white;
+	transition:0.6s ease;
+    margin: 0 10px;
+}
+
+ul li a:hover
+{
+	background-color:orangered;
+	color: black;
+}
+
+
+footer
+{
+    position: absolute;
+    bottom: -700;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: 30;
+    width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3
+{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content h6
+{
+    max-width: 500px;
+    margin: 8px auto;
+    line-height: 8px;
+    font-size: 14px;
+}
+
+
+.footer-bottom
+{
+	text-align: center;
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+	
+    
+}
+
+.footer-bottom p
+{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+	margin: 8px auto;
+	text-align: center
+}
+
+.footer-bottom span
+{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}

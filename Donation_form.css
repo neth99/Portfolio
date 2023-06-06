@@ -1,0 +1,398 @@
+
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  background: transparent;
+}
+
+body
+{
+background: rgba(0,0,0,0.74) url(erik-jan-leusink-gr1UYHBFkD4-unsplash.jpg);
+height:100%;
+background-size: cover;
+background-blend-mode: darken;
+background-position: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main
+{
+  width: 100%;
+  height: 20vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 3%;
+  box-sizing: border-box;
+}
+
+.navbar
+{
+  height: 12%;
+  display: flex;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.logo
+{
+  width: 150px;
+  cursor: pointer;
+  margin-top: 3%;
+}
+
+
+nav
+{
+  flex: 1;
+  text-align: right;
+}
+
+ul
+{
+float:right;
+list-style-type:none;
+margin-top:35px;
+padding:40;
+}
+
+ul li
+{
+display:inline-block;
+}
+
+ul li a
+{
+text-decoration:none;
+color:white;
+padding:10px 20px;
+border:2px solid white;
+transition:0.6s ease;
+  margin: 0 10px;
+}
+
+ul li a:hover
+{
+background-color:orangered;
+color: black;
+}
+
+h2
+{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+h2 span
+{
+    text-transform: uppercase;
+    color: orangered;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+}
+
+.container form{
+  padding:20px;
+  width:700px;
+  background: transparent;
+  
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:rgb(255, 255, 255);
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+span
+{
+  color: #fff;
+  font-size: 15px;
+}
+
+
+.inputBox p{
+  position: absolute;
+  bottom:10px;
+  right:20px;
+  font-size: 12px;
+  color:red;
+}
+
+.inputBox p i{
+  color: rgb(255, 93, 29);
+  font-size: 15px;
+  
+}
+
+#submit-error{
+  color:red;
+}
+
+#gender-error{
+  color:red;
+  font-size:10px;
+}
+
+#c-error{
+  color:red;
+  font-size:10px;
+}
+
+#name-error{
+  color:red;
+  font-size:10px;
+}
+
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid rgb(255, 255, 255);
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid rgb(255, 255, 255);
+  color: #fff;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  
+}
+button
+{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: orangered;
+    border: none;
+    width: 45%;
+    cursor: pointer;
+    margin-top: 30%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.center, .content
+{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.content
+{
+    margin-top: 200px;
+    opacity: 0;
+    visibility: hidden;
+    width: 400px;
+    height: 350px;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+}
+
+#click:checked ~ .content
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+#click
+{
+    display: none;
+}
+
+.click-me
+{
+    display: block;
+    margin-top: 990px;
+    width: 660px;
+    height: 30px;
+    background-color: orangered;
+    border: 1px solid rgb(236, 64, 1);
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 140%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.click-me:hover
+{
+    background: rgb(206, 57, 3);
+    color: black;
+}
+
+
+
+.header
+{
+    height: 68px;
+    background-color: orangered;
+    overflow: hidden;
+    border-radius: 2px 3px 0 rgba(0,0,0,.2);
+}
+
+.header h1
+{
+    color: #fff;
+    padding-top: 8px;
+    padding-left: 32px;
+    font-weight: normal;
+}
+
+.fa-circle-xmark
+{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #e8f7fc;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fa-shield-cat
+{
+    font-size: 60px;
+    color: orangered;
+    font-weight: bold;
+    height: 80px;
+    width: 80px;
+    border: none;
+    text-align: center;
+    padding-top: 13px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-left: 145px;
+    
+}
+
+p
+{
+    padding-top: 10px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.line
+{
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    height: 1px;
+    background: silver;
+}
+
+.close-btn
+{
+    position: absolute;
+    bottom: 10px;
+    right: 25px;
+    border: 1px solid orangered;
+    border-radius: 3px;
+    padding: 8px 10px;
+    font-size: 18px;
+    color: orangered;
+    cursor: pointer;
+}
+
+.close-btn:hover
+{
+    background: orangered;
+    color: #fff;
+    transition: 0.5s;
+}
+
+footer
+{
+    position: absolute;
+    bottom: -300;
+    left: 0;
+    right: 0;
+    background: transparent;
+    height: auto;
+    width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-bottom
+{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p
+{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span
+{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}

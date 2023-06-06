@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign In / Register - Home for Meow</title>
+    <link rel="stylesheet" href="Sign_in.css">
+    </head>
+<body>
+    <div class="full-page">
+            <div class="navbar">
+                <img src="logo.png" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="HomePage.html">Home</a><li>
+                        <li><a href="About_us.html">About Us</a><li>
+                        <li><a href="contactusnew.html">Contact</a><li>
+                    </ul>
+                </nav>
+            </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login' method="POST" action="connect.php">
+                    <input type='text'class='input-field'placeholder='Email Id' name="emailin" required >
+		    <input type='password'class='input-field'placeholder='Enter Password' name="passwardin" required>
+		    <input type='checkbox'class='check-box'><span>Remember Password</span>
+            <button type='submit'class='submit-btn'>Log in</button>
+            
+		    
+		 </form>
+		 <form id='register' class='input-group-register' method ="POST" action="connect2.php">
+		     <input type='text'class='input-field'placeholder='First Name' name="fnamein"required>
+		     <input type='text'class='input-field'placeholder='Last Name ' name="lnamein"required>
+		     <input type='email'class='input-field'placeholder='Email Id'name="emailin" required>
+		     <input type='password'class='input-field'placeholder='Enter Password' name="pwd"required>
+		     <input type='password'class='input-field'placeholder='Confirm Password' name="repwd" required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+	         </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

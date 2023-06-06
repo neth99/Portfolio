@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: rgba(0,0,0,0.74) url(erik-jan-leusink-gr1UYHBFkD4-unsplash.jpg);
+	height:100%;
+	background-size: cover;
+    background-blend-mode: darken;
+	background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main
+{
+    width: 100%;
+    height: 20vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 3%;
+    box-sizing: border-box;
+}
+
+.navbar
+{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.logo
+{
+    width: 150px;
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+
+nav
+{
+    flex: 1;
+    text-align: right;
+}
+
+ul
+{
+	float:right;
+	list-style-type:none;
+	margin-top:35px;
+	padding:40;
+}
+
+ul li
+{
+	display:inline-block;
+}
+
+ul li a
+{
+	text-decoration:none;
+	color:white;
+	padding:10px 20px;
+	border:2px solid white;
+	transition:0.6s ease;
+    margin: 0 10px;
+}
+
+ul li a:hover
+{
+	background-color:orangered;
+	color: black;
+}
+
+
+.hero
+{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+form
+{
+    width: 90%;
+    margin-top: 10px;
+    max-width: 400px;
+    padding-top: 0;
+}
+
+.input-group
+{
+    margin-top: 5%;
+    color: #fff;
+    position: relative;
+}
+
+input, textarea
+{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+
+label
+{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+
+h4 {
+    margin: 10px;
+    margin-left: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: #fff;
+    font-weight: 450;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
+  
+  .radio-container {
+    font-size: 15px;
+    padding: 20px;
+    color: #fff;
+    padding-bottom: 0;
+    margin-left: 40px;
+  }
+  
+  .radio-container input[type="radio"] {
+    display: none;
+  }
+  
+  .radio-container label {
+    position: relative;
+    cursor: pointer;
+    
+    padding-right: 32px;
+  }
+  
+  .radio-container label:nth-last-child(1) {
+    padding-right: 0;
+  }
+  
+  .radio-container label::before {
+    content: "";
+    border: 2px solid rgb(255, 255, 255);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: -5px 20px;
+    margin-left: 0;
+    border-radius: 50%;
+  }
+  
+  .radio-container label::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 68, 0, 0);
+    left: 15px;
+    top: 20.2px;
+    margin: -5px 20px;
+    margin-left: 0;
+    border-radius: 50%;
+  
+    transition: all 0.4s;
+  }
+  
+  .radio-container input[type="radio"]:checked + label::after {
+    background: rgba(255, 68, 0, 1);
+  }
+
+button
+{
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: orangered;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label
+{
+    top: -30px;
+    font-size: 14px;
+}
+
+.row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.row .input-group
+{
+    flex-basis: 48%;
+}
+
+.description
+{
+    background: none;
+    width: 70%;
+    padding: 0px;
+    margin: 5px auto;
+}
+
+h2
+{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+h2 span
+{
+    text-transform: uppercase;
+    color: orangered;
+    font-weight: 400;
+}
+
+footer
+{
+    position: absolute;
+    bottom: -300;
+    left: 0;
+    right: 0;
+    background: transparent;
+    height: auto;
+    width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-bottom
+{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p
+{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span
+{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
